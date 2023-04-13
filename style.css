@@ -317,7 +317,8 @@ span {
   padding: 1.5rem;
   font-size: 1.6em;
   color: var(--text-color);
-  background: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+  background: var(--bg-color);
   border-radius: .8rem;
   margin: .7rem 0;
 }
