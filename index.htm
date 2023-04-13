@@ -77,7 +77,7 @@
             <i class="bx bxl-codepen"></i>
             <h3>App Development</h3>
             <p>
-              Want to 
+                @Smooth Services, we specialize in creating custom mobile apps that are tailored to meet the unique needs of our clients. From idea to launch, we work closely with you to bring your vision to life and create an app that exceeds your expectations.
             </p>
             <a href="#contact" class="btn">Click Here</a>
           </div>
@@ -86,10 +86,7 @@
             <i class="bx bxl-codepen"></i>
             <h3>Web Development</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas nam
-              non consequuntur beatae in nostrum qui, ullam, quos exercitationem
-              laudantium culpa fugiat animi accusamus soluta sit nemo possimus
-              quasi pariatur?
+                @Smooth Services, we pride ourselves on creating beautiful and functional websites that are designed to meet the unique needs of our clients. Our experienced team of web developers uses the latest technologies and industry best practices to create stunning and responsive websites that are both visually appealing and user-friendly.
             </p>
             <a href="#contact" class="btn">Click Here</a>
           </div>
@@ -99,10 +96,7 @@
 
             <h3>UI&UX Design</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas nam
-              non consequuntur beatae in nostrum qui, ullam, quos exercitationem
-              laudantium culpa fugiat animi accusamus soluta sit nemo possimus
-              quasi pariatur?
+                @ Smooth Services, we understand that great user interface and experience design can make all the difference when it comes to the success of a digital product. Our team of experienced designers is dedicated to creating visually appealing and intuitive user interfaces that are designed to delight and engage your target audience.
             </p>
             <a href="#contact" class="btn">Click Here</a>
           </div>
@@ -115,29 +109,27 @@
        <div class="portfolio-container">
 
         <div class="portfolio-box">
-            <img src="images/desktop1.jpg" alt="">
+            <img src="images/coverter.jpg" alt="">
             <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni voluptatum ut error corrupti beatae nobis doloremque eligendi dolores, explicabo consectetur.</p>
-                <a href="#"><i class="bx bx-link-external"></i></a>
+                <h4>Anime Converter</h4>
+                <p>This project creates real world videos to animation <br>
+                    Click Here
+                </p>
+                <a href="https://animeconverter.netlify.app/" target="_blank"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
         <div class="portfolio-box">
-            <img src="images/desktop2.jpg" alt="">
+            <img src="images/toe.jpg" alt="">
             <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni voluptatum ut error corrupti beatae nobis doloremque eligendi dolores, explicabo consectetur.</p>
-                <a href="#"><i class="bx bx-link-external"></i></a>
+                <h4>Never Win : TIC TAC TOE</h4>
+                <p>This Tic Tac Toe app is designed with an unbeatable AI that always wins.<br>
+                    Click Here
+                </p>
+                <a href="https://www.amazon.com/dp/B0BYQQ7Y3R/ref=apps_sf_sta" target="_blank"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
 
-        <div class="portfolio-box">
-            <img src="images/desktop3.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni voluptatum ut error corrupti beatae nobis doloremque eligendi dolores, explicabo consectetur.</p>
-                <a href="#"><i class="bx bx-link-external"></i></a>
-            </div>
+     
         </div>
 
         <!-- <div class="portfolio-box">
@@ -175,7 +167,7 @@
    
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Us </span></h2>
-    <form>
+    <form method="post">
         <div class="input-box">
             <input type="text" placeholder="Full Name">
             <input type="email" placeholder="E-Mail Address">
@@ -205,8 +197,26 @@
    <script src="script.js"></script>
 
    <!-- contact btn -->
+   <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+
   <script>
-    
+      var btn = document.getElementById('btn');
+      btn.addEventListener('click', function(e) {
+      e.preventDefault()
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "servicessmooth@gmail.com",
+        Password : "",
+        To : 'servicessmooth@gmail.com',
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+      })
   </script>
 
 </body>
