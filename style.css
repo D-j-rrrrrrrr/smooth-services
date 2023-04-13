@@ -227,7 +227,8 @@ span {
   margin-bottom: 4rem;
 }
 .portfolio-container {
-  display: grid;
+  display: flex;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
@@ -240,9 +241,9 @@ span {
   box-shadow: 0 0 1rem var(--second-bg-color);
   overflow: hidden;
   display: flex;
-  padding: 20px;
-  height: 100%;
-  width:100%;
+  padding: 3rem 2rem 4rem;
+  height: 70%;
+  width:70%;
 }
 
 
