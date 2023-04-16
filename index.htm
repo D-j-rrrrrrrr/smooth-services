@@ -64,7 +64,16 @@
             24 hr Live Tracking of your Project <br>
 
             Free customisation after completion of project <br>
-        </p>
+        </p> <br>
+
+        <!-- <div class="social-media">
+            <a href="mailto:servicessmooth@gmail.com"><i class='bx bxs-envelope'></i>
+           
+        </div>
+       <h3><P>CONTACT - servicessmooth@gmail.com</P></h3> -->
+
+    
+        
         <a href="#services" class="btn">Read More</a>
    </div>
 </section>
@@ -136,12 +145,12 @@
    
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Us </span></h2>
-    <form method="post">
+    <form onsubmit="mail(); reset(); return false; ">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="E-Mail Address">
+            <input type="text" placeholder="Full Name" id="name">
+            <input type="email" placeholder="E-Mail Address" id="email">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
         <button id="btn">Send Message</button>
     </form>
 
@@ -168,24 +177,43 @@
    <!-- contact btn -->
    <script src="https://smtpjs.com/v3/smtp.js">
 </script>
+ <script>
+    function mail(){
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
 
 
-  <script>
-      var btn = document.getElementById('btn');
-      btn.addEventListener('click', function(e) {
-      e.preventDefault()
-      Email.send({
-        Host : "smtp.gmail.com",
-        Username : "servicessmooth@gmail.com",
-        Password : "",
-        To : 'servicessmooth@gmail.com',
-        From : "you@isp.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-      })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Email.send({
+          
+            SecureToken : "56f60176-0838-4981-988a-40c76eb24b24",
+            To : 'servicessmooth@gmail.com',
+            From : "servicessmooth@gmail.com",
+            Subject : "Mail From Contact Form",
+            Body : "name:" + name + "<br/> User Email:" + email + "<br/> message:" + message
+        }).then(
+          message => alert(message)
+        );
+        
+    }
+   
+
   </script>
 
 </body>
