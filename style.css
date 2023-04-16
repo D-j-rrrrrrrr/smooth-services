@@ -165,7 +165,7 @@ span {
 }
 .about-img img {
   width: 35vw;
-}
+  }
 .heading {
   text-align: center;
   font-size: 4.5rem;
@@ -180,7 +180,9 @@ span {
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+  color: #fff;
 }
+
 
 .services h2 {
   margin-bottom: 5rem;
